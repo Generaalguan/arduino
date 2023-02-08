@@ -14,17 +14,18 @@ void setup() {
 } void loop() {   int detected = digitalRead(DETECT);// read Laser sensor
   if( detected == HIGH)
   {
-    digitalWrite(ACTION,HIGH);// set the buzzer ON
+    digitalWrite(ACTION,HIGH);// set the zon ON
     Serial.println("Detected!");   }
   else{
   
-    digitalWrite(ACTION,LOW); // Set the buzzer OFF
-    Serial.println("No laser");   }     if( detected == HIGH)
+    digitalWrite(ACTION,LOW); // Set the zon OFF
+    Serial.println("No laser");   }     
+   if( detected == HIGH)
   {
-    digitalWrite(led,LOW);// set the buzzer ON
+    digitalWrite(led,LOW);// set the sterren ON
     Serial.println("no led!"); }
   else{  
-    digitalWrite(led,HIGH); // Set the buzzer OFF
+    digitalWrite(led,HIGH); // Set the sterren OFF
     Serial.println("led on");
   }
   delay(200);
